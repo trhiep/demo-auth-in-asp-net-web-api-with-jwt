@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "0bbe2ebf-c774-4e2d-9dc1-6100959688e0",
+		"name": "DemoAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32284868",
+		"_collection_link": "https://ocbk99.postman.co/workspace/OCBK-Workspace~da48651e-1227-4c3f-90e9-de4cd5613a3c/collection/32284868-0bbe2ebf-c774-4e2d-9dc1-6100959688e0?action=share&source=collection_link&creator=32284868"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIzZjRkZGFlMy0wNGM5LTQ3OTEtODVjNi02YWE4MGZiNTA1NjkiLCJpYXQiOiIxMC8yMi8yMDI0IDExOjE0OjU1IEFNIiwiVXNlcklkIjoiMSIsIkRpc3BsYXlOYW1lIjoiQWRtaW4gVXNlciIsIlVzZXJOYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBRE1JTiIsImV4cCI6MTcyOTU5NjI5NSwiaXNzIjoiSldUQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJKV1RTZXJ2aWNlUG9zdG1hbkNsaWVudCJ9.E4RvbV1JHMGJoEWP7qRIsjKKUMzfXwyp4SMuKG_EMjU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7298/api/Products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7298",
+							"path": [
+								"api",
+								"Products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7298/api/Products/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7298",
+							"path": [
+								"api",
+								"Products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserInfo",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIyZGRmZWY2MC03ZDBmLTQ5NGUtOTE3MS1mNWEwZmNiYjg4NTciLCJpYXQiOiIxMC8yMi8yMDI0IDI6MjM6MzggUE0iLCJVc2VySWQiOiIxIiwiRGlzcGxheU5hbWUiOiJBZG1pbiBVc2VyIiwiVXNlck5hbWUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFETUlOIiwiZXhwIjoxNzI5NjA3MDc4LCJpc3MiOiJKV1RBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6IkpXVFNlcnZpY2VQb3N0bWFuQ2xpZW50In0.Zp45aSgwwF0XEfNQZiZzRBU3xbYcSGSxnQo6X2Xh39M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7298/api/UserInfoes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7298",
+							"path": [
+								"api",
+								"UserInfoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7298/api/UserInfoes/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7298",
+							"path": [
+								"api",
+								"UserInfoes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\" : \"admin\",\r\n    \"Password\" : \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7298/api/Authentication/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7298",
+							"path": [
+								"api",
+								"Authentication",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"AccessToken\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIyZGRmZWY2MC03ZDBmLTQ5NGUtOTE3MS1mNWEwZmNiYjg4NTciLCJpYXQiOiIxMC8yMi8yMDI0IDI6MjM6MzggUE0iLCJVc2VySWQiOiIxIiwiRGlzcGxheU5hbWUiOiJBZG1pbiBVc2VyIiwiVXNlck5hbWUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFETUlOIiwiZXhwIjoxNzI5NjA3MDc4LCJpc3MiOiJKV1RBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6IkpXVFNlcnZpY2VQb3N0bWFuQ2xpZW50In0.Zp45aSgwwF0XEfNQZiZzRBU3xbYcSGSxnQo6X2Xh39M\",\r\n    \"RefreshToken\" : \"l12+YBNl+vqOlRqaAbKfI2CS+upmZdk+DXA9EYs1Nwo=\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7298/api/Authentication/logout",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7298",
+							"path": [
+								"api",
+								"Authentication",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"AccessToken\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIyZGRmZWY2MC03ZDBmLTQ5NGUtOTE3MS1mNWEwZmNiYjg4NTciLCJpYXQiOiIxMC8yMi8yMDI0IDI6MjM6MzggUE0iLCJVc2VySWQiOiIxIiwiRGlzcGxheU5hbWUiOiJBZG1pbiBVc2VyIiwiVXNlck5hbWUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFETUlOIiwiZXhwIjoxNzI5NjA3MDc4LCJpc3MiOiJKV1RBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6IkpXVFNlcnZpY2VQb3N0bWFuQ2xpZW50In0.Zp45aSgwwF0XEfNQZiZzRBU3xbYcSGSxnQo6X2Xh39M\",\r\n    \"RefreshToken\" : \"l12+YBNl+vqOlRqaAbKfI2CS+upmZdk+DXA9EYs1Nwo=\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7298/api/Authentication/refresh",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7298",
+							"path": [
+								"api",
+								"Authentication",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
