@@ -72,9 +72,6 @@ namespace DemoAuthAPI.Controllers
                 return Unauthorized("Invalid refresh token");
             }
 
-            // Optionally: Revoke the used refresh token and generate a new one
-            _context.UserTokens.Remove(refreshToken);
-
             // Generate a new access token (JWT)
             var user = _context.UserInfos.Where(ui => ui.UserId == refreshToken.UserId).First();
             var newJwtToken = AuthenticationHelper.GenerateJwtToken(_configuration, user);
